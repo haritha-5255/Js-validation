@@ -12,22 +12,22 @@ function validation() {
     alert('firstName');
   
   
-window.onload =function select() {
-var stateSel = document.getElementById("state");
-var citySel = document.getElementById("city");
-alert("stateSel");
-for (var x in stateObject) {
-stateSel.options[stateSel.options.length] = new Option(x, x);
-}
-stateSel.onchange = function sub() {
-//empty  dropdowns
-citySel.length = 1;
-//display correct values
-for (var y in stateObject[this.value]) {
-  citySel.options[citySel.options.length] = new Option(y, y);
-}
-}
-}
+// window.onload =function select() {
+// var stateSel = document.getElementById("state");
+// var citySel = document.getElementById("city");
+// alert("stateSel");
+// for (var x in stateObject) {
+// stateSel.options[stateSel.options.length] = new Option(x, x);
+// }
+// stateSel.onchange = function sub() {
+// //empty  dropdowns
+// citySel.length = 1;
+// //display correct values
+// for (var y in stateObject[this.value]) {
+//   citySel.options[citySel.options.length] = new Option(y, y);
+// }
+// }
+// }
 /* var firstName = document.myForm.fname.value;
 
 var lastName = document.myForm.lname.value;

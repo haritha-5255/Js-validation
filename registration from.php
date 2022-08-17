@@ -22,7 +22,7 @@
                             <label for="fname">First name</label>
                             <input type="text" class="form-control" name="fname" id="fname" value="" required>
                             <div class="error" id="fErr"></div>
-                          </div>
+                          </div><br>
                           <div class="col-md-6 mb-3 pl-2 pr-2">
                             <label for="lname">Last name</label>
                             <input type="text" class="form-control" name="lname" id="lname" value="" required>
