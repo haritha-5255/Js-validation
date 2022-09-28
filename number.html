@@ -1,0 +1,63 @@
+<!-- //https://jsfiddle.net/Lea43nqh/2/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="number">Enter any number:</label>
+        <input type="number" id="number" name="number" value="">
+        <button type="button" onclick="getSeries();">Get Value</button>
+        <p id="ok"></p>
+        <script>
+              function getSeries() {
+                var temp=0;
+                 let num=document.getElementById('number').value;
+                var number=num;
+                 var array=[];
+                let j=2;
+                //  while(j=0)
+                //  {
+                 if(number>0)
+                 {
+                     for(let i=0;i<3;i++)
+                    {
+                        if(number%2==0)
+                        {
+                          temp=number;
+                         number=parseInt(temp)+2;
+                         console.log(array);
+                        array.push(number);
+                    }
+                    else{
+                        temp=number;
+                         number=parseInt(temp)+2;
+                         console.log(array);
+                        array.push(number);
+                    }
+
+                     
+
+                    }
+                 }else{
+                    document.getElementById('ok').innerHTML='please enter a positive number!';
+                 }
+                //  j++;
+                // }
+               
+                alert(num);
+//    for(i=0;i<3;i++)
+//    {
+    document.getElementById('ok').innerHTML=array;       
+    // document.write(array);      
+// }
+      
+            }
+                       </script>
+    </form>
+</body>
+</html>
